@@ -24,46 +24,25 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-gray-700">
-                Hello! I'm Nazmul Hossain, a passionate JavaScript developer
-                specializing in creating innovative web solutions and
-                user-friendly interfaces.{" "}
+                Hello! I'm 
+                {" "}
                 <span className="font-bold text-gray-700">
-                  As the creator of the OlovaJS UI Framework
+                  Nahia
                 </span>
-                , I'm dedicated to simplifying development workflows.
+                , a passionate TypeScript developer focused on building intuitive, efficient, and accessible web experiences. I'm especially driven by the idea of making development workflows simpler and faster for everyone.
+
               </p>
               <p className="text-gray-700">
-                My focus is on making web development faster, easier, and
-                accessible to all developers. Currently, I'm expanding into
-                backend development to grow as a full-stack developer and create
-                seamless, robust web applications.
+                Currently, I'm expanding my skills into backend development with technologies like Node.js, Python, MongoDB, and MySQL, as I pursue a full-stack perspective to deliver seamless, end-to-end web applications.
               </p>
 
               <div className="pt-6">
                 <blockquote className="border-l-4 border-gray-300 pl-4">
                   <p className="text-gray-700">
-                    I'm a lifelong learner and innovator, driven by a desire to
-                    contribute to the developer community with new ideas and
-                    tools that deliver real value. As the creator of OlovaJS,
-                    I'm pushing the boundaries of JavaScript frameworks to
-                    empower developers worldwide.
-                  </p>
+                    I’m a lifelong learner with a curious mind and a passion for creating tools that bring real value to the developer community. I see code as more than syntax—it's a way to solve problems, tell stories, and build bridges.
 
-                  <div className="mt-6 space-y-3">
-                    <cite className="block font-medium text-gray-700">
-                      Nazmul Hossain, Creator of
-                    </cite>
-                    <div className="flex items-center gap-2">
-                      <img
-                        className="h-5 w-fit"
-                        src={OlovaLogo}
-                        alt="Olova Logo"
-                        height="20"
-                        width="auto"
-                      />
-                      <span className="text-white">OlovaJS</span>
-                    </div>
-                  </div>
+                    I'm here to keep creating, growing, and sharing—one commit at a time.
+                  </p>
                 </blockquote>
               </div>
             </div>
