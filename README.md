@@ -1,16 +1,16 @@
 # Nahia M. – Portfolio
 
-Bienvenido/a a mi portafolio personal. Este sitio está diseñado para presentar de forma profesional mis habilidades, experiencia, proyectos y cómo contactarme. Desarrollado con tecnologías modernas como **React**, **Vite**, **Tailwind CSS** y animaciones con **Framer Motion**, es rápido, responsivo y visualmente atractivo.
+Welcome to my personal portfolio. This site is designed to professionally showcase my skills, experience, projects, and how to get in touch with me. Built with modern technologies like React, Vite, Tailwind CSS, and Framer Motion, it offers a fast, responsive, and visually appealing experience.
 
 ---
 
 ## 🔗 Live Demo
 
-👉 **[Ver portafolio en línea](https://tusitio.vercel.app)** *(Reemplaza con tu link real cuando lo tengas desplegado)*
+👉 **[View Portfolio Online](https://tusitio.vercel.app)** 
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```bash
 portfolio/
@@ -33,53 +33,54 @@ portfolio/
 
 ---
 
-## 🧩 Secciones del Portafolio
-
-- **Home** – Introducción y saludo visual
-- **Skills** – Habilidades técnicas (frontend, herramientas, etc.)
-- **Experience** – Experiencia laboral o proyectos significativos
-- **Education** – Formación académica y certificaciones
-- **Projects** – Muestra de trabajos con enlaces y descripciones
-- **Contact** – Formulario o enlaces para contactarme
+## 🧩 Portfolio Sections
+- Home – Introduction and visual greeting
+- Skills – Technical skills (frontend, tools, etc.)
+- Experience – Work history and relevant roles
+- Education – Academic background and certifications
+- Projects – Showcase of works with links and descriptions
+- Contact – Form or links to reach out
 
 ---
 
 ## 💻 Tecnologías Usadas
 
-| Herramienta      | Uso Principal                  |
-|------------------|-------------------------------|
-| React            | Librería para construir la UI |
-| Vite             | Bundler ultra rápido          |
-| Tailwind CSS     | Estilado moderno y utilitario |
-| Framer Motion    | Animaciones fluidas           |
-| React Icons      | Iconografía SVG               |
-| Vercel           | Despliegue del sitio web      |
+| Technology       | Purpose                      |
+|------------------|------------------------------|
+| React            | Building user interface      |
+| Vite             | Lightning-fast build tool    |
+| Tailwind CSS     | Modern utility-first styling |
+| Framer Motion    | Smooth animations            |
+| React Icons      | Scalable vector icons        |
+| Vercel           | Deployment platform          |
 
 ---
 
-## 🚀 Instrucciones de Uso (Desarrolladores)
+## 🚀 Getting Started (Developers)
 
-Si deseas ejecutar este proyecto localmente:
+To run this project locally:
 
-1. **Clonar el repositorio**  
+1. **Clone the repository**  
    ```bash
    git clone https://github.com/Nahia-24/portfolio.git
    cd portfolio
    ```
-2. **Instalar dependencias**
+2. **Install dependencies**
    ```bash
    npm install
    ```
-3. **Iniciar servidor local**
+3. **Start the development serverl**
    ```bash
    npm run dev
    ```
    
 ---
-## 📝 Licencia
-Este proyecto está bajo licencia MIT, incluyendo la plantilla base.
-Consulta el archivo LICENSE para más detalles.
 
-## 🤝 Créditos
-Plantilla base creada por Nazmul Hossain
-Adaptación y personalización por Nahia M.
+## 📝 License
+
+This project is licensed under the MIT License, including the base template.
+See the LICENSE file for more information.
+
+## 🤝 Credits
+Base template by Nazmul Hossain
+Adaptation and customization by Nahia M.
