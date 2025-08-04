@@ -1,4 +1,4 @@
-# 🌐 Nahia M. – Portfolio
+# Nahia M. – Portfolio
 
 Bienvenido/a a mi portafolio personal. Este sitio está diseñado para presentar de forma profesional mis habilidades, experiencia, proyectos y cómo contactarme. Desarrollado con tecnologías modernas como **React**, **Vite**, **Tailwind CSS** y animaciones con **Framer Motion**, es rápido, responsivo y visualmente atractivo.
 
