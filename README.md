@@ -12,22 +12,24 @@ Bienvenido/a a mi portafolio personal. Este sitio está diseñado para presentar
 
 ## 📁 Estructura del Proyecto
 
+```bash
 portfolio/
 ├── public/
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── ui/
-│ │ ├── lib/
-│ ├── pages/
-│ ├── App.jsx
-│ └── main.jsx
+│   ├── assets/
+│   ├── components/
+│   │   ├── ui/
+│   │   └── lib/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
 ├── vercel.json
 └── vite.config.js
+```
 
 ---
 
