@@ -111,12 +111,22 @@ const SkillsSection = () => {
       title: "Cloud & DevOps",
       color: "text-orange-400",
       skills: [
-        { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
         {
-          name: "Google Cloud",
-          icon: <SiGooglecloud className="w-4 h-4 text-[#4285F4]" />,
+          name: "Vercel",
+          icon: <SiVercel className="w-4 h-4 text-black" />, // ícono de Vercel
         },
-        { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
+        {
+          name: "Git",
+          icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" />,
+        },
+        {
+          name: "GitHub",
+          icon: <FaGithub className="w-4 h-4 text-[#181717]" />, // opcional si quieres destacar GitHub
+        },
+        {
+          name: "GitLab",
+          icon: <FaGitlab className="w-4 h-4 text-[#FC6D26]" />, // opcional
+        },
       ],
     },
     {
