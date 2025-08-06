@@ -3,16 +3,14 @@ import IconCloud from "./ui/icon-cloud";
 const slugs = [
   "typescript",
   "javascript",
-  "java",
+  "php",
+  "vue",
+  "laravel",
   "react",
-  "android",
   "html5",
   "css3",
   "express",
   "prisma",
-  "amazonaws",
-  "msql",
-  "googlecloud",
   "firebase",
   "vercel",
   "git",
@@ -20,8 +18,6 @@ const slugs = [
   "github",
   "gitlab",
   "visualstudiocode",
-  "androidstudio",
-  "sonarqube",
   "figma",
 ];
 
