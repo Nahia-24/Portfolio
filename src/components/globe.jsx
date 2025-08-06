@@ -10,7 +10,6 @@ const slugs = [
   "html5",
   "css3",
   "express",
-  "prisma",
   "firebase",
   "vercel",
   "git",
@@ -19,6 +18,10 @@ const slugs = [
   "gitlab",
   "visualstudiocode",
   "figma",
+  "nodejs",
+  "mysql",
+  "react",
+  "mongodb",
 ];
 
 function IconCloudDemo() {
