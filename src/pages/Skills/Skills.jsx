@@ -8,7 +8,8 @@ import {
   FaNodeJs,
   FaPython,
   FaGitAlt,
-  FaAws
+  FaGithub, 
+  FaGitlab,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -18,7 +19,6 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
-  SiGooglecloud
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
