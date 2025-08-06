@@ -20,8 +20,8 @@ const slugs = [
   "figma",
   "nodejs",
   "mysql",
-  "react",
   "mongodb",
+  "vite",
 ];
 
 function IconCloudDemo() {
