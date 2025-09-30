@@ -99,8 +99,8 @@ export default function Projects() {
 
   return (
     <ReactLenis root>
-      <main className="bg-[#f5f5dc] text-[#403c28]" ref={container}>
-        <section className="w-full bg-[#fefcf5] text-[#403c28]">
+      <main className="bg-[var(--card-bg)] text-[var(--text-color)]" ref={container}>
+        <section className="w-full bg-[var(--section-bg)] text-[var(--text-color)]">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (
@@ -158,9 +158,10 @@ function Card({
           transition: { duration: 0.3 },
         }}
       >
-        {/* Modern split card design */}
-        <div className="w-full flex flex-col md:flex-row bg-[#f5f5dc]/90 rounded-2xl border border-[#cab87a]/40">
-          {/* Image section - full width on mobile, 55% on desktop */}
+        {/* Modern split card design - CAMBIA ESTAS LÍNEAS: */}
+        <div className="w-full flex flex-col md:flex-row bg-[var(--card-bg)] rounded-2xl border border-[var(--border-color)]">
+          
+          {/* Image section - se mantiene igual */}
           <div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
             <motion.img
               src={url}
@@ -194,22 +195,22 @@ function Card({
                   className="w-2 h-2 md:w-3 md:h-3 rounded-full"
                   style={{ backgroundColor: color }}
                 />
-                <div className="h-[1px] w-12 md:w-20 bg-gray-600" />
+                <div className="h-[1px] w-12 md:w-20 bg-[var(--text-color)] opacity-50" />
               </div>
 
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-2 md:mb-4">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[var(--text-color)] mb-2 md:mb-4">
                 {title}
               </h2>
-              <p className="text-sm md:text-base text-[#5a5333] leading-relaxed line-clamp-3 md:line-clamp-none max-w-md">
+                  
+              <p className="text-sm md:text-base text-[var(--text-color)] opacity-80 leading-relaxed line-clamp-3 md:line-clamp-none max-w-md">
                 {description}
               </p>
             </div>
 
             <div className="mt-4 md:mt-auto pt-4">
-              <div className="w-full h-[1px] bg-gray-800 mb-4 md:mb-6" />
+              <div className="w-full h-[1px] bg-[var(--text-color)] opacity-30 mb-4 md:mb-6" />
 
               <div className="flex items-center gap-4">
-                {/* GitHub Link */}
                 <motion.a
                   href={githubLink}
                   target="_blank"
@@ -224,7 +225,7 @@ function Card({
                     height="22"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#8a7038"
+                    stroke="var(--text-color)"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -239,7 +240,6 @@ function Card({
                   </span>
                 </motion.a>
 
-                {/* Live Link */}
                 <motion.a
                   href={liveLink}
                   target="_blank"

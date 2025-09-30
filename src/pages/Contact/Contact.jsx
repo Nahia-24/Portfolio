@@ -89,7 +89,7 @@ export default function Contact() {
 
   return (
     <main
-      className="pt-20 lg:pt-[0rem] bg-[#fefcf5] text-[#403c28] min-h-screen"
+      className="pt-20 lg:pt-[0rem] bg-[var(--section-bg)] text-[var(--text-color)] min-h-screen"
     >
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
@@ -129,7 +129,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="relative backdrop-blur-lg bg-[#f5f5dc] p-8 rounded-2xl shadow-xl">
+            <div className="relative backdrop-blur-lg bg-[var(--card-bg)] p-8 rounded-2xl shadow-xl">
               {/* Sparkles en esquina */}
               <div className="absolute top-0 left-0 p-2 z-9">
                 <SparklesText/>

@@ -59,13 +59,7 @@ const EducationSection = () => {
   };
 
   return (
-    <section className="min-h-screen relative overflow-hidden py-40 bg-[#fefcf5]">
-      {/* Grid Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[#fefcf5]" />
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:50px_50px]" />
-        <div className="absolute inset-0 border border-white/[0.05] grid grid-cols-2 md:grid-cols-4" />
-      </div>
+    <section className="min-h-screen relative overflow-hidden py-40 bg-[var(--section-bg)]">
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
@@ -77,7 +71,7 @@ const EducationSection = () => {
           <h2 className="text-4xl md:text-5xl mb-4 font-bold text-center bg-clip-text text-transparent gradient-text">
             Educational Journey
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg font-medium">
+          <p className="text-[var(--text-color)] opacity-70 max-w-2xl mx-auto text-lg font-medium">
             Discover how academic excellence shapes innovative thinking and
             professional growth.
           </p>
@@ -93,7 +87,7 @@ const EducationSection = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className={`relative border rounded-xl p-8 transition-all duration-300 bg-[#f5f5dc]/90 backdrop-blur-sm ${hoveredIndex === index
+              className={`relative border rounded-xl p-8 transition-all duration-300 bg-[var(--card-bg)] backdrop-blur-sm ${hoveredIndex === index
                   ? "border-teal-500 scale-[1.02]"
                   : "border-blue-400/20"
                 }`}
@@ -104,26 +98,26 @@ const EducationSection = () => {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">{edu.mascot}</span>
-                    <h3 className="text-2xl font-bold text-gray-500">
+                    <h3 className="text-2xl font-bold text-[var(--text-color)]">
                       {edu.degree}
                     </h3>
                   </div>
-                  <p className="text-lg text-gray-400 flex items-center gap-2">
+                  <p className="text-lg text-[var(--text-color)] opacity-70 flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-teal-500" />
                     {edu.school}
                   </p>
-                  <p className="text-gray-500 flex items-center gap-2">
+                  <p className="text-[var(--text-color)] opacity-70 flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
                     {edu.year}
                   </p>
                 </div>
 
-                <p className="text-gray-400 text-sm italic border-l-2 border-teal-500 pl-3">
+                <p className="text-[var(--text-color)] opacity-70 text-sm italic border-l-2 border-teal-500 pl-3">
                   {edu.description}
                 </p>
 
                 <div className="space-y-3">
-                  <h4 className="text-sm font-semibold text-gray-500 flex items-center gap-2">
+                  <h4 className="text-sm font-semibold text-[var(--text-color)] flex items-center gap-2">
                     <Trophy className="w-4 h-4 text-yellow-500" />
                     Key Achievements
                   </h4>
