@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Code2, Activity, Cpu, Layers, Network, Binary, Database, Globe } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -7,6 +7,7 @@ const ExperienceCard = ({
   period,
   description,
   icon: Icon,
+  technologies,
 }) => (
   <div className="group relative overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
     {/* Glass morphism effect */}
@@ -36,6 +37,20 @@ const ExperienceCard = ({
         <p className="text-gray-500 border-l-4 border-blue-500/20 pl-4 mt-4 leading-relaxed">
           {description}
         </p>
+        
+        {/* Technologies badges */}
+        {technologies && (
+          <div className="flex flex-wrap gap-2 mt-4">
+            {technologies.map((tech, idx) => (
+              <span
+                key={idx}
+                className="text-xs font-mono bg-gradient-to-r from-cyan-500/10 to-purple-500/10 text-gray-600 px-2 py-1 rounded-md border border-blue-500/20"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Decorative elements */}
@@ -54,28 +69,31 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
-      description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
-    },
-    {
-      icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
-      description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
-    },
-    {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
+      title: "Software Developer",
+      company: "OPENCODE SAS",
+      period: "Sep 2024 - Sep 2025",
+      description:
+        "Developed full-stack web applications using PHP, Laravel, and Vue.js for government and educational sector projects, serving 100+ users with role-based access control systems.",
+      technologies: ["PHP", "Laravel", "Vue.js", "MySQL", "JavaScript", "REST APIs"]
+    },
+    {
+      icon: Activity,
+      title: "Social Media Manager",
+      company: "Freelance",
+      period: "Jan 2023 - Dec 2023",
+      description:
+        "Managed comprehensive social media strategy and digital marketing campaigns, increasing engagement by 45% through data-driven content optimization and CRM integrations.",
+      technologies: ["CRM Systems", "Analytics", "Digital Marketing", "Content Strategy"]
+    },
+    {
+      icon: Database,
+      title: "Systems Engineering Student",
+      company: "Universidad Santiago de Cali",
       period: "2023 - Present",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Pursuing Bachelor's degree in Systems Engineering with focus on full-stack development, database management, and modern web technologies. GPA: 4.1",
+      technologies: ["Data Structures", "Algorithms", "Software Architecture", "Problem Solving"]
     },
   ];
 
@@ -86,7 +104,7 @@ const ExperienceSection = () => {
         <div className="absolute inset-0 bg-[#fefcf5]" />
 
         {/* Grid background */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(252, 252, 252, 0.75)_1px,transparent_1px),linear-gradient(rgba(252, 252, 252, 0.75)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_70%,transparent_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(252,_252,_252,_0.75)_1px,transparent_1px),linear-gradient(rgba(252,_252,_252,_0.75)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_70%,transparent_100%)]" />
 
         {/* Animated particles */}
         <div className="absolute inset-0">
@@ -98,6 +116,7 @@ const ExperienceSection = () => {
                 top: `${Math.random() * 100}%`,
                 left: `${Math.random() * 100}%`,
                 animationDelay: `${Math.random() * 5}s`,
+                animation: `float ${3 + Math.random() * 2}s ease-in-out infinite`
               }}
             />
           ))}
@@ -109,12 +128,12 @@ const ExperienceSection = () => {
           <div className="flex flex-col items-center space-y-8 mb-20">
             <div className="relative">
               <h2 className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent gradient-text">
-                Professional 
+                Professional Journey
               </h2>
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-500 font-medium tracking-wide text-center max-w-2xl">
-              "Transforming ideas into digital reality, one project at a time"
+              "Building scalable solutions and turning challenges into opportunities"
             </p>
           </div>
 
@@ -128,8 +147,39 @@ const ExperienceSection = () => {
 
         {/* Enhanced background effects */}
         <div className="absolute top-20 left-20 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
       </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+        
+        .gradient-text {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        @keyframes gradient-xy {
+          0%, 100% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+        }
+        
+        .animate-gradient-xy {
+          background-size: 200% 200%;
+          animation: gradient-xy 3s ease infinite;
+        }
+      `}</style>
     </>
   );
 };
