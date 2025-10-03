@@ -33,7 +33,8 @@ export default function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
+          
+          // <Route path="/projects" element={<Projects />} />
         </Routes>
       )}
     </AppProvider>
