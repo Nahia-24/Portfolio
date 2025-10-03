@@ -34,7 +34,7 @@ export default function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
           
-          // <Route path="/projects" element={<Projects />} />
+          {/*<Route path="/projects" element={<Projects />} /> */}
         </Routes>
       )}
     </AppProvider>
