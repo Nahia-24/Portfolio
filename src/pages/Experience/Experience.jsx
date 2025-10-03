@@ -37,20 +37,6 @@ const ExperienceCard = ({
         <p className="text-gray-500 border-l-4 border-blue-500/20 pl-4 mt-4 leading-relaxed">
           {description}
         </p>
-        
-        {/* Technologies badges */}
-        {technologies && (
-          <div className="flex flex-wrap gap-2 mt-4">
-            {technologies.map((tech, idx) => (
-              <span
-                key={idx}
-                className="text-xs font-mono bg-gradient-to-r from-cyan-500/10 to-purple-500/10 text-gray-600 px-2 py-1 rounded-md border border-blue-500/20"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* Decorative elements */}
